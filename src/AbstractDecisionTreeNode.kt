@@ -113,7 +113,7 @@ abstract class AbstractDecisionTreeNode {
         }
     }
 
-    internal abstract fun evaluatePartitionQuality(part: HashMap<String, ExampleSet>, examples: ExampleSet): Double
+    internal abstract fun evaluatePartitionQuality(partition: HashMap<String, ExampleSet>, examples: ExampleSet): Double
 
     internal abstract fun createChildNode(examples: ExampleSet, selectionProperties: Set<String>): AbstractDecisionTreeNode
 }

@@ -1,3 +1,7 @@
+package id3
+
+import id3.AbstractExample
+import id3.ExampleSet
 import java.util.*
 
 /**
@@ -37,7 +41,7 @@ abstract class AbstractDecisionTreeNode {
         children.put(propertyValue, child)
     }
 
-    private fun  induceTree(examples: ExampleSet, selectionProperties: Set<String>) {
+    fun induceTree(examples: ExampleSet, selectionProperties: Set<String>) {
         // Case 1: All instances the same category, this node is a leaf.
         if (examples.getCategories().size == 1) {
             category = examples.getCategories().iterator().next()
@@ -107,6 +111,7 @@ abstract class AbstractDecisionTreeNode {
             return
         }
 
+        println(indent + "Property = " + decisionPropertyName)
         for((propertyValue, child) in children) {
             println(indent + decisionPropertyName + " = " + propertyValue)
             child.printTree(level + 1)

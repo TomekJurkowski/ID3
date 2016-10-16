@@ -1,3 +1,5 @@
+package id3
+
 import java.util.*
 
 /**
@@ -11,17 +13,17 @@ class ExampleSet {
 
     fun addExample(abstractExample: AbstractExample) {
         if (abstractExample.getCategory() == null) {
-            throw IllegalArgumentException("Illegal example: all examples in an ExampleSet must have a categorization.")
+            throw IllegalArgumentException("Illegal example: all examples in an id3.ExampleSet must have a categorization.")
         }
 
-        if (examples.isEmpty() || abstractExample.javaClass.kotlin === examples.firstElement().javaClass.kotlin) {
+        if (examples.isEmpty() || abstractExample.javaClass.kotlin == examples.firstElement().javaClass.kotlin) {
             examples.add(abstractExample)
             categories.add(abstractExample.getCategory()!!)
             if (propertyNames == null) {
                 propertyNames = HashSet(abstractExample.getPropertyNames())
             }
         } else {
-            throw IllegalArgumentException("Illegal example: all examples in an ExampleSet must be of same type.")
+            throw IllegalArgumentException("Illegal example: all examples in an id3.ExampleSet must be of same type.")
         }
     }
 
@@ -57,7 +59,7 @@ class ExampleSet {
         val exampleSet = ExampleSet()
 
         for (abstractExample in examples) {
-            if (abstractExample.getProperty(propertyName).getValue().equals(value)) {
+            if (abstractExample.getProperty(propertyName).getValue() == value) {
                 exampleSet.addExample(abstractExample)
             }
         }

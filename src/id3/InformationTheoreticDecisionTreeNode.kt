@@ -1,3 +1,5 @@
+package id3
+
 import java.util.*
 
 /**
@@ -24,7 +26,7 @@ class InformationTheoreticDecisionTreeNode : AbstractDecisionTreeNode {
         return examplesInfo - expectedInfo
     }
 
-    private fun  computeInformation(examples: ExampleSet): Double {
+    private fun computeInformation(examples: ExampleSet): Double {
         val categories = examples.getCategories()
         var info = 0.0
         val totalCount = examples.getSize().toDouble()

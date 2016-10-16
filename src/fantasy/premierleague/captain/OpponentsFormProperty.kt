@@ -5,7 +5,7 @@ import id3.AbstractProperty
 /**
  * Created by tjurkowski on 16/10/2016.
  */
-class OpponentsForm(propertyValue: String) : AbstractProperty(propertyValue) {
+class OpponentsFormProperty(propertyValue: String) : AbstractProperty(propertyValue) {
 
     override fun getName(): String {
         return OPPONENTS_FORM

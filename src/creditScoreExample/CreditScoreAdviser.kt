@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.LOW_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 2
         example = CreditExample(
@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.MEDIUM_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 3
         example = CreditExample(
@@ -34,7 +34,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.MEDIUM_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 4
         example = CreditExample(
@@ -43,7 +43,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.LOW_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 5
         example = CreditExample(
@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.HIGH_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 6
         example = CreditExample(
@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.ADEQUATE),
                 IncomeProperty(IncomeProperty.HIGH_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 7
         example = CreditExample(
@@ -70,7 +70,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.LOW_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 8
         example = CreditExample(
@@ -79,7 +79,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.ADEQUATE),
                 IncomeProperty(IncomeProperty.HIGH_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 9
         example = CreditExample(
@@ -88,7 +88,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.LOW),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.HIGH_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 10
         example = CreditExample(
@@ -97,7 +97,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.ADEQUATE),
                 IncomeProperty(IncomeProperty.HIGH_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 11
         example = CreditExample(
@@ -106,7 +106,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.LOW_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 12
         example = CreditExample(
@@ -115,7 +115,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.MEDIUM_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 13
         example = CreditExample(
@@ -124,7 +124,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.HIGH_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         // Example 14
         example = CreditExample(
@@ -133,7 +133,7 @@ fun main(args: Array<String>) {
                 DebtProperty(DebtProperty.HIGH),
                 CollateralProperty(CollateralProperty.NONE),
                 IncomeProperty(IncomeProperty.MEDIUM_INCOME))
-                exampleSet.addExample(example)
+        exampleSet.addExample(example)
 
         println()
         System.out.println("example count = " + exampleSet.getSize())

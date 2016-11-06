@@ -13,7 +13,7 @@ class RecentTimeOnTheFieldProperty(propertyValue: String) : AbstractProperty(pro
 
     override fun isLegalValue(value: String): Boolean {
         return value == ZERO || value == LESS_THAN_45 || value == BETWEEN_45_AND_90 || value == BETWEEN_91_AND_135
-                || value == BETWEEN_151_AND_210 || value == BETWEEN_225_AND_270 || value == OVER_270
+                || value == BETWEEN_135_AND_180 || value == BETWEEN_180_AND_225 || value == BETWEEN_225_AND_270
     }
 
     companion object {
@@ -23,8 +23,8 @@ class RecentTimeOnTheFieldProperty(propertyValue: String) : AbstractProperty(pro
         val LESS_THAN_45 = "(0, 45] minutes"
         val BETWEEN_45_AND_90 = "(45, 90] minutes"
         val BETWEEN_91_AND_135 = "(90, 135] minutes"
-        val BETWEEN_151_AND_210 = "135, 180] minutes"
+        val BETWEEN_135_AND_180 = "(135, 180] minutes"
+        val BETWEEN_180_AND_225 = "(135, 180] minutes"
         val BETWEEN_225_AND_270 = "(225, 270] minutes"
-        val OVER_270 = "over 270 minutes"
     }
 }

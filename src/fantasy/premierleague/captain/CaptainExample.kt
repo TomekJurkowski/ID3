@@ -9,10 +9,14 @@ import java.util.*
  */
 class CaptainExample : AbstractExample {
 
-    constructor(category: String, vararg propertyList: AbstractProperty) : super(category, *propertyList) {
+    var playerName: String? = null
+
+    constructor(playerName: String, category: String, vararg propertyList: AbstractProperty) : super(category, *propertyList) {
+        this.playerName = playerName
     }
 
-    constructor(vararg propertyList: AbstractProperty) : super(*propertyList) {
+    constructor(playerName: String, vararg propertyList: AbstractProperty) : super(*propertyList) {
+        this.playerName = playerName
     }
 
     override fun getPropertyNames(): MutableSet<String> {
@@ -30,6 +34,10 @@ class CaptainExample : AbstractExample {
 
     override fun isLegalCategory(cat: String?): Boolean {
         return cat == null || cat == GOOD_CAPTAIN_CANDIDATE || cat == MEDIOCRE_CAPTAIN_CANDIDATE || cat == BAD_CAPTAIN_CANDIDATE
+    }
+
+    override fun toString(): String {
+        return "$playerName:\t${super.toString()}"
     }
 
     companion object {
